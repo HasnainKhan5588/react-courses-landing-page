@@ -1,32 +1,46 @@
-import React from 'react'
-import heroImg from '../assets/heroImg.png'
-import { AiOutlineSearch } from 'react-icons/ai'
-
-const HeroSection = () => {
+import { AiOutlineSearch } from "react-icons/ai";
+import HeroImg from "../assets/heroImg.png";
+function HeroSection() {
   return (
-    <section className='w-full bg-white py-24 p-4'>
-        <div className='md:max-w-[1100px] m-auto grid md:grid-cols-2 max-w-[400px]'>
-            <div className='flex flex-col justify-start gap-4'>
-                <p className='py-2 text-4xl text-[#208486] font-bold'>START TO SUCCESS</p>
-                <h1 className='md:leading-[42px] py-2 md:text-3xl text-lg font-semibold'>
-                    Access to over <span className='text-[#208486]'>1000</span> courses from over <span className='text-[#208486]'>200</span> professional instructors & institutions
-                </h1>
-                <p className='py-2 text-lg text-gray-900'>Various versions have evolved over the years</p>
-                <form className='input-box-shadow flex justify-content-between items-center bg-transparent gap-2'>
-                    <input type="text" className="my-2 w-full px-5 py-3 border border-solid border-neutral-300 bg-transparent bg-clip-padding text-base font-normal text-neutral-700 outline-none placeholder:text-neutral-500" placeholder='search for courses here'/>
-                    <button>
-                        <AiOutlineSearch
-                            size={30}
-                            className='icon'
-                            style={{ color:'#000' }}
-                        />
-                    </button>
-                </form>
-            </div>
-            <img src={heroImg} alt="hero" className='md:order-last order-first'/>
+    <section
+      id="home"
+      className="flex md:justify-between items-center md:mt-20 flex-wrap mt-8 justify-center"
+    >
+      <div className="flex flex-col gap-8 text-center md:text-left md:w-[45%]">
+        <h1 className="text-[#208486] text-2xl md:text-4xl font-bold  ">
+          START TO SUCCESS
+        </h1>
+        <h3 className="text-lg text md:text-3xl font-semibold  ">
+          Access to over <span className="text-[#208486]">1000</span> courses
+          from over <span className="text-[#208486]">200</span> professional
+          instructors & institutions
+        </h3>
+        <p className="md:text-xl ">
+          Various versions have evolved over the years
+        </p>
+        <div className="flex items-center gap-5">
+          <input
+            type="text"
+            className="my-2 w-full px-5 py-3 border border-solid border-neutral-300 bg-transparent bg-clip-padding text-base font-normal text-neutral-700 outline-none placeholder:text-neutral-500"
+            placeholder="search for courses here"
+          />
+
+          <AiOutlineSearch
+            size={40}
+            className="icon cursor-pointer"
+            style={{ color: "#000" }}
+          />
         </div>
+      </div>
+      <div className="md:w-[45%]">
+        <img
+          className="md:order-last w-[100%] order-first"
+          src={HeroImg}
+          alt="heroimage"
+        />
+      </div>
     </section>
-  )
+  );
 }
 
-export default HeroSection
+export default HeroSection;
