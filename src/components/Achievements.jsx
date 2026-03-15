@@ -6,13 +6,13 @@ import { FaPeopleCarry } from "react-icons/fa";
 
 const Achievement = () => {
   return (
-    <section className="w-full bg-white p-5 md:mt-20 mt-5">
+    <section className="w-full bg-white p-5 md:mt-20 mt-5" id="achievements">
       <div className="md:max-w-[1100px] m-auto grid md:grid-cols-2 max-w-[400px]">
         <div className="flex flex-col justify-start gap-4">
-          <h1 className="md:leading-[42px] py-2 text-3xl font-semibold">
+          <h1 className="md:leading-[42px] py-2 text-lg md:text-3xl font-semibold">
             Our <span className="text-[#208486]">Achievements</span>
           </h1>
-          <p className=" text-[#536e96] text-2x1">
+          <p className=" text-[#536e96] text-sm md:text-2x1">
             Leading Companies use the same courses to help their employees keep
             skill up
           </p>

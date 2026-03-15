@@ -1,0 +1,73 @@
+import React from "react";
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import Logo from "../assets/logo.svg";
+function Footer() {
+  return (
+    <div className="w-full min-h-screen gap-10 flex justify-center items-center flex-wrap md:flex-nowrap mt-10">
+      <div className="col-span-1">
+        <img src={Logo} alt="logo-footer" className="h-[25px]" />
+        <h3 className="font-bold text-2xl mt-10">Contact us</h3>
+        <h3 className="py-2 text-[#60737a]">call: 647 68658 86658</h3>
+        <h3 className="py-2 text-[#60737a]">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+          officia .
+        </h3>
+        <h3 className="py-2 text-[#363a3d]">Email: example@gmail.com</h3>
+        <div className="flex gap-4">
+          <div className="p-4 rounded bg-[#e9f8f3]">
+            <FaFacebook size={30} />
+          </div>
+          <div className="p-4 rounded bg-[#e9f8f3]">
+            <FaTwitter size={30} />
+          </div>
+          <div className="p-4 rounded bg-[#e9f8f3]">
+            <FaLinkedin size={30} />
+          </div>
+          <div className="p-4 rounded bg-[#e9f8f3]">
+            <FaInstagram size={30} />
+          </div>
+        </div>
+      </div>
+      <div className="col-span-1">
+        <h3 className="font-bold text-2xl mt-10">Explore</h3>
+        <ul className="py-3 text-[#60737a]">
+          <li className="py-2">Home</li>
+          <li className="py-2">About us</li>
+          <li className="py-2">Courses</li>
+          <li className="py-2">Contact us</li>
+        </ul>
+      </div>
+      <div>
+        {" "}
+        <h3 className="font-bold text-2xl mt-10">Categories</h3>
+        <ul className="py-3 text-[#60737a]">
+          <li className="py-2">Design</li>
+          <li className="py-2">Development</li>
+          <li className="py-2">Marketing</li>
+          <li className="py-2">Finance</li>
+          <li className="py-2">Music</li>
+          <li className="py-2">Photography</li>
+        </ul>
+      </div>
+      <div className="col-span-2">
+        <h3 className="font-bold text-2xl mt-10">Subscribe</h3>
+        <h3 className="py-2 text-[#60737a]">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+          officia .
+        </h3>
+        <form className="input-box-shadow flex justify-content-between items-center bg-transparent gap-2">
+          <input
+            type="text"
+            className="my-2 w-full px-5 py-3 border border-solid border-neutral-300 bg-transparent bg-clip-padding text-base font-normal text-neutral-700 outline-none placeholder:text-neutral-500"
+            placeholder="Enter your email address here"
+          />
+          <button className="my-2 px-5 py-3 bg-[#208446] text-white">
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+  );
+}
+
+export default Footer;

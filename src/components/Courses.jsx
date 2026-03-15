@@ -33,13 +33,12 @@ function Courses() {
   };
 
   return (
-    <section id="courses" className=" ">
-      <div className="h-20"></div>
+    <section id="courses" className="py-20 md:py-24">
       <div>
-        <h3 className="text-3xl font-bold ">
+        <h3 className="text-lg md:text-3xl font-bold ">
           Most Popular <span className="text-[#208486]">Courses</span>{" "}
         </h3>
-        <p className="mt-5 text-lg text-neutral-500">
+        <p className="mt-5 text-sm sm:text-lg text-neutral-500">
           Various versions have evolved over the years, sometimes by accident.
         </p>
       </div>

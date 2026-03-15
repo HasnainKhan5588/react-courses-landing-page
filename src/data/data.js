@@ -2,8 +2,8 @@ export  const NavItems = [
     { id: "home", label: "Home" },
     { id: "courses", label: "Courses" },
     { id: "achievements", label: "Achievements" },
-    { id: "platform", label: "Platform" },
-    { id: "pricing", label: "Pricing" },
+    { id: "categories", label: "Categories" },
+    { id: "platfom", label: "Platforms" },
   ];
 export const courses = [
     {

@@ -15,7 +15,7 @@ function Navbar() {
 
   return (
     <nav className="flex justify-between items-center py-8 sticky">
-      <div>
+      <div className="w-[30%] md:w-fit ">
         <img src={Logo} alt="logo" />
       </div>
       <ul className=" gap-6 hidden lg:flex ">
@@ -47,10 +47,10 @@ function Navbar() {
         <img src={isOpen ? Close : Menu} alt="" />
       </motion.div>
       {isOpen && (
-        <ul className="top-20 w-full mt-25 text-center flex flex-col gap-4 font-semibold bg-white left-0 fixed ">
+        <ul className="top-20 md:hidden w-full mt-25 text-center flex flex-col gap-4 font-semibold bg-white left-0 fixed ">
           {NavItems.map((item) => (
             <Link
-              className="capitalize hover:text-green-400 transition-all "
+              className="capitalize hover:text-green-400 transition-all md:text-lg text-sm "
               key={item.id}
               to={item.id}
               smooth={true}
@@ -60,10 +60,10 @@ function Navbar() {
             </Link>
           ))}
           <div className="flex justify-center gap-6">
-            <button className="border-2 border-[#208446] text-[#208446] rounded-md flex gap-2 px-3 py-2">
+            <button className="border-2 md:text-lg text-sm border-[#208446] text-[#208446] rounded-md flex gap-2 px-3 py-2">
               <img src={Lock} alt="lock" /> sgin In
             </button>
-            <button className="rounded-md px-4 hover:bg-green-500 transition-all py-2 bg-green-600 text-lg">
+            <button className="rounded-md px-4 hover:bg-green-500 transition-all py-2 bg-green-600 md:text-lg text-sm">
               Sign up for free
             </button>
           </div>
